@@ -31,9 +31,9 @@ plt.plot(u10,i10,'b-o',label='$U_c = 10$ V')
 
 plt.legend()
 plt.grid(which = 'both')
-plt.xlabel(r'$U_{\text{з}}, V$')
+plt.xlabel(r'$-U_{\text{з}}, V$')
 plt.ylabel(r'$I_c, mA$')
-plt.savefig('fig/task1.png',dpi=500)
+# plt.savefig('fig/task1.png',dpi=500)
 
 plt.show()
 
