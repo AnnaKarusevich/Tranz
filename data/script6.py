@@ -21,9 +21,9 @@ u = np.array(E2)/10
 t1 = [float(i) for i in sheet.row_values(37)[1:] if i != '']
 t2 = [float(i) for i in sheet.row_values(38)[1:] if i != '']
 
-plt.figure(figsize = (10,7))
+plt.figure(figsize = (10,6))
 plt.plot(u,t1,'ro',label='$t_1$')
-plt.plot(u,t2,'ko',label='$t_2$')
+plt.plot(u,t2,'ks',label='$t_2$')
 
 # plt.xscale('log')
 plt.legend()
@@ -34,5 +34,5 @@ plt.xlabel(r'$U_{\text{з}},\text{ В}$')
 plt.ylabel(r'$t,\text{мкс}$')
 plt.savefig('fig/task6.png',dpi=500)
 
-# plt.show()
+plt.show()
 
