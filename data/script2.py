@@ -20,17 +20,17 @@ i0 = [float(i) for i in sheet.row_values(13)[1:] if i != '']
 u0 = [float(i) for i in sheet.row_values(14)[1:] if i != '']
 i05 = [float(i) for i in sheet.row_values(16)[1:] if i != '']
 u05 = [float(i) for i in sheet.row_values(17)[1:] if i != '']
-i15 = [float(i) for i in sheet.row_values(19)[1:] if i != '']
-u15 = [float(i) for i in sheet.row_values(20)[1:] if i != '']
-i1 = [float(i) for i in sheet.row_values(22)[1:] if i != '']
-u1 = [float(i) for i in sheet.row_values(23)[1:] if i != '']
+i1 = [float(i) for i in sheet.row_values(19)[1:] if i != '']
+u1 = [float(i) for i in sheet.row_values(20)[1:] if i != '']
+i15 = [float(i) for i in sheet.row_values(22)[1:] if i != '']
+u15 = [float(i) for i in sheet.row_values(23)[1:] if i != '']
 
 
 plt.figure(figsize = (10,7))
 plt.plot(u0,i0,'k-s',label=r'$U_{\text{з}} = 0$ V')
-plt.plot(u05,i05,'r-o',label=r'$U_{\text{з}} = 0.5$ V')
-plt.plot(u1,i1,'b-o',label=r'$U_{\text{з}} = 1$ V')
-plt.plot(u15,i15,'g-o',label=r'$U_{\text{з}} = 1.5$ V')
+plt.plot(u05,i05,'r-o',label=r'$U_{\text{з}} = -0.5$ V')
+plt.plot(u1,i1,'b-o',label=r'$U_{\text{з}} = -1$ V')
+plt.plot(u15,i15,'g-o',label=r'$U_{\text{з}} = -1.5$ V')
 
 plt.legend()
 plt.grid(which = 'both')
