@@ -22,7 +22,7 @@ u = np.array(u)/2
 K = u/0.2
 
 plt.figure(figsize = (10,7))
-plt.plot(f,K,'ro')
+plt.plot(f,K,'ko-')
 
 plt.xscale('log')
 plt.grid(which = 'both')
